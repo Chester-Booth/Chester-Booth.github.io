@@ -4,134 +4,145 @@
 <title> CraftSite </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
-* { box-sizing: border-box;
-}
-@font-face {
-    font-family: minecraft; src: url('minecraft_font.ttf'), Calibri, sans-serif;
-}
-.button {
-  background-color: #474747;
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-
-body {
-    margin:0;
-    font-family: minecraft
-    
-}
-
-
-.header {
-  overflow: hidden;
-  background-color: #1e1e1e;
-  padding: 20px 10px;
-}
-
-.header a {
-  float: left;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-
-.header a:hover {
-  background-color: #474747;
-  color: rgb(255, 255, 255);
-}
-
-.header a.active {
-  background-color: rgb(21, 87, 154);
-  color: white;
-
-}
-
-.header-right {
-  float: right;
-}
-
-@media screen and (max-width: 500px) {
-    float: none;
-    display: block;
-    text-align: left;
+   { box-sizing: border-box;
+  }
+  @font-face {
+      font-family: minecraft; src: url('minecraft_font.ttf'),"trebuchet MS",Calibri;
+      
+  }
+  .button {
+    background-color: #474747;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family:minecraft;
+  }
+  
+  body {
+      margin:0;
+      font-family: minecraft
+      
+  }
+  
+  
+  .header {
+    overflow: hidden;
+    background-color: #1e1e1e;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  
+  .header a:hover {
+    background-color: #474747;
+    color: rgb(255, 255, 255);
+  }
+  
+  .header a.active {
+    background-color: rgb(21, 87, 154);
+    color: white;
+  
   }
   
   .header-right {
     float: right;
   }
-  .tab {
-  overflow: hidden;
-
-  background-color: #1e1e1e;
-}
-
-
-.tab button {
-  display: block;
-  background-color: #1e1e1e;
-  color: rgb(255, 255, 255);
-  padding: 22px 16px;
-  width: 100%;
-  font-family: minecraft;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-  border-radius: 4px;
-  height: 100px;
-  padding: 20px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  padding: 10px;
-  background-color: #474747;
-  color: rgb(255, 255, 255);
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: rgb(21, 87, 154);
-}
-
-/* Style the tab content */
-.tabcontent {
-  background-color: #333333;
-  color: #AbAbAb;
-  display: none;
-  padding: 6px 12px;
-  border-top: none;
-}
-
-
-
-
+  
+  @media screen and (max-width: 500px) {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: right;
+    }
+    .tab {
+    overflow: hidden;
+  
+    background-color: #1e1e1e;
+  }
+  
+  
+  .tab button {
+    display: block;
+    background-color: #1e1e1e;
+    color: rgb(255, 255, 255);
+    padding: 22px 16px;
+    width: 100%;
+    font-family: minecraft;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 4px;
+    height: 60px;
+    padding: 10px;
+    font-family:minecraft;
+  }
+  
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    padding: 2px;
+    transition; 0.5s;
+    background-color: #474747;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: rgb(21, 87, 154);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    background-color: #333333;
+    color: #AbAbAb;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  
+  
+  
+  
 </style>
-</head>
+
+  
+  
+  </style>
+
+
 
 <body style="background-color:#333333;">
 <div class="header">
     <img src="https://media.discordapp.net/attachments/806916548648370188/977726482690498570/logo.png" align ="left" width="50" height=auto>
     <a href="https://thecraftblox.github.io/index.html" class="logo">CraftSite</a>
   <div class="header-right">
-    <a class="active" href="https://thecraftblox.github.io/index.html">Home</a>
-    <a href="https://thecraftblox.github.io/bases/">Bases</a>
+    <a href="https://thecraftblox.github.io/index.html">Home</a>
+    <a class="active" href="https://thecraftblox.github.io/Bases/index.html">Bases</a>
     <a href="#tbd">TDB</a>
 
 
@@ -140,21 +151,7 @@ body {
 
 
 
-</html>
-
-
-</style>
-</head>
-
 <!--
-<div class="header">
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'The Average World')" id="defaultOpen">The Average World</button>
-  <button class="tablinks" onclick="openCity(event, 'The Survival World')">The Survival World</button>
-  <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
-</div></div> 
-
-
 <div id="The Average World" class="tabcontent">
   <h2>The Average World</h2>
   <hr>
@@ -203,9 +200,9 @@ document.getElementById("defaultOpen").click();
 </script>
    
 </body>
-
---> 
-<div style="padding-left:18px;">
-  <h1 style="color:#ffffff">Currently not here</h1>
-  <p style=" color:#ffffff">will come in future</p>
-  </div>
+ -->
+ <div style="padding:20px">
+  <h2 style="color:white;font-size:25px">Bases</h2>
+   <p style="color:white">Full 3d renders of bases will come in the future.</p>
+ </div>
+ 
