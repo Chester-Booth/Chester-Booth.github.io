@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> craftsite </title>
+<title> CraftSite </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -11,22 +11,35 @@
 @font-face {
     font-family: minecraft; src: url('minecraft_font.ttf'), Calibri, sans-serif;
 }
+.button {
+  background-color: #474747;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 
 body {
     margin:0;
     font-family: minecraft
+    
 }
 
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #1e1e1e;
   padding: 20px 10px;
 }
 
 .header a {
   float: left;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -37,8 +50,8 @@ body {
 
 
 .header a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #474747;
+  color: rgb(255, 255, 255);
 }
 
 .header a.active {
@@ -61,18 +74,16 @@ body {
     float: right;
   }
   .tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #cacaca;
-  width: 25%;
-  height: 90vh;
+  overflow: hidden;
+
+  background-color: #1e1e1e;
 }
 
 
 .tab button {
   display: block;
-  background-color: inherit;
-  color: black;
+  background-color: #1e1e1e;
+  color: rgb(255, 255, 255);
   padding: 22px 16px;
   width: 100%;
   font-family: minecraft;
@@ -84,13 +95,14 @@ body {
   font-size: 17px;
   border-radius: 4px;
   height: 100px;
+  padding: 20px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
   padding: 10px;
-  background-color: #A0A0A0;
-  color: black;
+  background-color: #474747;
+  color: rgb(255, 255, 255);
 }
 
 /* Create an active/current "tab button" class */
@@ -100,11 +112,11 @@ body {
 
 /* Style the tab content */
 .tabcontent {
-  float: left;
-  padding: 0px 12px;
-  width: 75%;
-  border-left: none;
-  height: 1vw;
+  background-color: #333333;
+  color: #AbAbAb;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
 
 
@@ -112,8 +124,8 @@ body {
 
 </style>
 </head>
-<body>
 
+<body style="background-color:#333333;">
 <div class="header">
     <img src="https://media.discordapp.net/attachments/806916548648370188/977726482690498570/logo.png" align ="left" width="50" height=auto>
     <a href="https://thecraftblox.github.io/index.html" class="logo">CraftSite</a>
@@ -121,7 +133,6 @@ body {
     <a class="active" href="https://thecraftblox.github.io/index.html">Home</a>
     <a href="https://thecraftblox.github.io/bases/">Bases</a>
     <a href="#tbd">TDB</a>
-    
 
 
   </div>
@@ -136,29 +147,30 @@ body {
 </head>
 
 
-
+<div class="header">
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'The Average World')" id="defaultOpen">The Average World</button>
   <button class="tablinks" onclick="openCity(event, 'The Survival World')">The Survival World</button>
   <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
-</div>
+</div></div> 
 
 <div id="The Average World" class="tabcontent">
   <h2>The Average World</h2>
   <hr>
   <p style="font-size:20px">The Average World was the best realm.</p>
-  <a href="https://thecraftblox.github.io/Worlds/Isometric/TAW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View</a>
+  <a class = "button" href="https://thecraftblox.github.io/Worlds/Isometric/TAW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View</a>
+ 
   <br><br>
-  <a href="https://thecraftblox.github.io/Worlds/Top-Down/TAW/index.html" class="logo">See Top-Down View</a>
+  <a class = "button" href="https://thecraftblox.github.io/Worlds/Top-Down/TAW/index.html" class="logo">See Top-Down View</a>
 </div>
 
 <div id="The Survival World" class="tabcontent">
   <h2>The Survival World</h2>
   <hr>
   <p style="font-size:20px">The Survival World was the og.</p> 
-  <a href="https://thecraftblox.github.io/Worlds/Isometric/TSW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View</a>
+  <a class = "button" href="https://thecraftblox.github.io/Worlds/Isometric/TSW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View</a>
   <br><br>
-  <a href="https://thecraftblox.github.io/Worlds/Top-Down/TSW/index.html" class="logo">See Top-Down View</a>
+  <a class = "button" href="https://thecraftblox.github.io/Worlds/Top-Down/TSW/index.html" class="logo">See Top-Down View</a>
 </div>
 
 <div id="Other" class="tabcontent">
