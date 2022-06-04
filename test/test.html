@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ * {
+	 margin: 0;
+	 padding: 0;
+   /*background-color: #000000;*/
+
+}
+ body {
+	 font-family: 'Raleway', sans-serif;
+	 font-size: 4rem;
+	 color: rgb(255, 255, 255);
+}
+ body .parallax_wrapper {
+
+	 height: 100vh;
+	 overflow-x: hidden;
+	 overflow-y: auto;
+	 perspective: 300px;
+}
+ body .parallax_wrapper .intro_screen {
+   background-color: #000000;
+	 height: 100vh;
+	 
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ body .parallax_wrapper .outro_screen {
+	 height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ body .parallax_wrapper .parallax_group {
+	 position: relative;
+	 height: 100vh;
+	 transform-style: preserve-3d;
+}
+ body .parallax_wrapper .parallax_group .parallax_layer {
+	 position: absolute;
+	 inset: 0;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ body .parallax_wrapper .parallax_group .parallax_layer.base_layer {
+	 transform: translateZ(-300px) scale(2.1);
+   background-color: rgba(230, 26, 26, 0);
+}
+ body .parallax_wrapper .parallax_group .parallax_layer.mid_layer {
+	 transform: translateZ(0);
+   background-color: rgba(20, 26, 230, 0);
+
+}
+ body .parallax_wrapper .parallax_group .parallax_layer.top_layer {
+	 transform: translateZ(210px) scale(0.3);
+   background-color: rgba(230, 26, 26, 0);
+}
+ body .parallax_wrapper #intro {
+	 z-index: 0;
+}
+ body .parallax_wrapper #g1 {
+	 z-index: -1;
+}
+ body .parallax_wrapper #g1 > .base_layer {
+	 
+}
+ body .parallax_wrapper #g2 > .mid_layer {
+	 
+}
+ 
+.black{
+  background-color: #000000;
+
+}
+.left_side{
+   background-color: #000000;
+   width: 8vw;
+   float:left;
+}
+
+.timeline {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1000vh;
+    width: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffff;
+    
+
+}
+
+.point{
+  position: absolute;
+    margin-left: -1.9vw;
+    height: 4.25vw;
+    width: 4.25vw;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0.75vw;
+    border-color: white;
+
+}
+
+
+
+.button {
+  background-color: #474747;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+</style>
+
+
+<aside class="left_side">
+  <div class=timeline> 
+    <br> <div class="point"> </div>
+    <br> <br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br>  <br><br> <br> <br> <br> <br><br>  <br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <div class="point"></div>
+   </div>
+</aside>
+
+<div class="parallax_wrapper" id="intro" style="background-color: #000000">
+  <div class="parallax_group intro_screen">
+    <span>
+      <div> 
+        <p style="font-size:8vh"> The Survival World</p><p style="font-size:4.5vh;color: #bababa;">26th Nov 2018 - Sept 2020 </p>
+        <a class = "button" href="https://thecraftblox.github.io/Worlds/Isometric/TSW/index.html" style="font-size:4vh">See Isometric</a> <a class = "button" href="https://thecraftblox.github.io/Worlds/Top-Down/TSW/index.html" style="font-size:4vh">See Top-Down</a>
+        <p style="font-size:4vh" >This was the first world, lasting nearly 3 years, however it had basically 2 players for a large portion of that and there was large breaks inbetween playing as it was a locally-hosted world, not a realm.   </p>
+      
+      </div>
+    </span>
+  </div>
+  <div class="parallax_group" id="g1">
+    <div class="parallax_layer base_layer">
+     
+     <span>
+
+      <img src="images/TSW/BLOX_TSW.png"     style="margin-left:40vw; margin-bottom: -55vh;" width="600" height="auto"> 
+      <img src="images/TSW/DMTT_TSW (1).png" style="margin-left:15vw; margin-bottom: 0vh;" width="550" height="auto" >
+      <img src="images/TSW/COMM_TSW (5).png" style="margin-left:50vw; margin-bottom: -65vh;" width="450" height="auto" >
+      <img src="images/TSW/COMM_TSW (4).png" style="margin-left:-40vw; margin-bottom: -40vh;" width="550" height="auto" >
+      <img src="images/TSW/DMTT_TSW (2).png" style="margin-left:-60vw; margin-bottom:-60vh;" width="425" height="auto" >
+
+     </span>
+      
+    </div>
+    <div class="parallax_layer mid_layer">
+      <span>
+        <img src="images/TSW/COMM_TSW (2).png" style="margin-left:45vw; margin-bottom: -60vh;" width="450" height="auto" >
+        <img src="images/TSW/BLOX_TSW (2).png" style="margin-left:3vw; margin-bottom: -140vh;" width="550" height="auto" >
+        <img src="images/TSW/BLOX_TSW).png" style="margin-right:40vw; margin-bottom: 00vh;" height="auto" width="400"> 
+        <img src="images/TSW/DMTT_TSW (4).png" style="margin-left:50vw; margin-top: 50vh;" width="450" height="auto" > 
+  
+      </span>
+    </div>
+  </div>
+  <div class="parallax_group" id="g2">
+    <div class="parallax_layer mid_layer">
+      <span>
+        <img src="images/TSW/DMTT_TSW (3).png" style="margin-right:50vw; margin-bottom: 40vh;" width="400" height="auto" >
+        <img src="images/TSW/BLOX_TSW (3).png" style="margin-left:50vw; margin-bottom: 40vh;" width="400" height="auto" >
+        
+      </span>
+    </div>
+    <div class="parallax_layer top_layer">
+      <span>
+        <img src="images/TSW/COMM_TSW (1).png" style="margin-right:40vw; margin-bottom: -40vh;" width="450" height="auto" > 
+        <img src="images/TSW/BLOX_TSW (4).png" style="margin-left:-10vw; margin-bottom: -40vh;" width="400" height="auto" > 
+        <img src="images/TSW/COMM_TSW (3).png" style="margin-left:30vw; margin-top: -430vh;" width="300" height="auto" >
+      </span>
+    </div>
+  </div>
+  <div class="parallax_group outro_screen" id="outro">
+    
+  </div>
+</div>
+
+<div class="black">
+<br>
+<p style="color:#000000">Shhh!</p>
+</div>
+
+
+<div class="parallax_wrapper" id="intro">
+  <div class="parallax_group intro_screen">
+    <span>
+      Sequel
+    </span>
+  </div>
+  <div class="parallax_group" id="g1">
+    <div class="parallax_layer base_layer">
+      <span>
+        <img src="test.png"> 
+      </span>
+    </div>
+    <div class="parallax_layer mid_layer">
+      <span>
+        TWO
+        <img src="test.png"> 
+  
+      </span>
+    </div>
+  </div>
+  <div class="parallax_group" id="g2">
+    <div class="parallax_layer mid_layer">
+      <span>
+        TWO FAST TWO FURIOUS
+        
+      </span>
+    </div>
+    <div class="parallax_layer top_layer">
+      <span>
+        OH YEAH
+        <img src="test.png"> 
+      </span>
+    </div>
+  </div>
+  <div class="parallax_group outro_screen" id="outro">
+    THATS IT FOLKS
+  </div>
+</div>
+<div class="black">
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
