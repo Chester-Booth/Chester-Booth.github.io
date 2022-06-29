@@ -26,12 +26,35 @@
   font-family:minecraft;
 }
 
+.button2 {
+  background-color: #333333;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family:minecraft;
+}
+
+.links {
+    display: inline;
+
+}
+
 body {
     margin:0;
     font-family: minecraft
     
 }
+p {
+  font-size: 20px;
+  color: #AbAbAb
 
+}
 
 .header {
   overflow: hidden;
@@ -117,7 +140,7 @@ body {
 
 .tabcontent {
   background-color: #333333;
-  color: #AbAbAb;
+  color: #ffffff;
   display: none;
   padding: 6px 12px;
   border-top: none;
@@ -136,7 +159,7 @@ body {
   <div class="header-right">
     <a class="active" href="https://thecraftblox.github.io/index.html">Home</a>
     <a href="https://thecraftblox.github.io/Bases/index.html">Bases</a>
-    <a href="https://thecraftblox.github.io/timeline.html">Timeline</a> 
+    <a href="https://thecraftblox.github.io/timeline.html">Timeline (WIP)</a> 
 
 
   </div>
@@ -153,13 +176,14 @@ body {
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'The Average World')" id="defaultOpen">The Average World</button>
   <button class="tablinks" onclick="openCity(event, 'The Survival World')">The Survival World</button>
+  <button class="tablinks" onclick="openCity(event, 'The Mediocre World')">The Mediocre World</button>
   <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
 </div></div> 
 
 <div id="The Average World" class="tabcontent">
   <h2>The Average World</h2>
   <hr>
-  <p style="font-size:20px">The Average World was the best realm.</p>
+  <p>The Average World was the best realm.</p>
   <a class = "button" href="https://thecraftblox.github.io/Worlds/Isometric/TAW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View</a>
  
   <br><br>
@@ -169,10 +193,24 @@ body {
 <div id="The Survival World" class="tabcontent">
   <h2>The Survival World</h2>
   <hr>
-  <p style="font-size:20px">The Survival World was the og.</p> 
+  <p>The Survival World was the og.</p> 
   <a class = "button" href="https://thecraftblox.github.io/Worlds/Isometric/TSW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View</a>
   <br><br>
   <a class = "button" href="https://thecraftblox.github.io/Worlds/Top-Down/TSW/index.html" class="logo">See Top-Down View</a>
+</div>
+
+<div id="The Mediocre World" class="tabcontent">
+  <h2>The Mediocre World</h2>
+  <hr>
+
+  <p>The Mediocre World is the current realm.</p> 
+<h2><U>World Views:</U></h2>
+
+<div class =links>
+<a class = "button2" class="logo" style ="font-size:20px"><b>23/06/22</b></a>
+<a class = "button" href="https://thecraftblox.github.io/Worlds/Isometric/TMW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View (TBD)</a>
+<a class = "button" href="https://thecraftblox.github.io/Worlds/Top-Down/TMW/index.html" class="logo">See Top-Down View</a>
+</div>
 </div>
 
 <div id="Other" class="tabcontent">
