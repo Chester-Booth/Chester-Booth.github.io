@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-* { box-sizing: border-box;
-}
-@font-face {
-    font-family: minecraft; src: url('minecraft_font.ttf'),"trebuchet MS",Calibri;
-    
 
+.text{
+    font-family: Calibri,Arial, Helvetica, sans-serif;
+   
 }
+
+
 .button {
   background-color: #474747;
   border: none;
@@ -24,7 +24,8 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
-  font-family:minecraft;
+  font-family: Calibri,Arial, Helvetica, sans-serif;
+
 }
 
 .button2 {
@@ -36,13 +37,14 @@
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
-  cursor: pointer;
   border-radius: 10px;
-  font-family:minecraft;
+  font-family: Calibri,Arial, Helvetica, sans-serif;
+
 }
 
 .links {
     display: inline;
+    font-family: Calibri,Arial, Helvetica, sans-serif;
 
 }
 .footer {
@@ -53,15 +55,17 @@
    background-color: #474747;
    color: white;
    text-align: center;
+   font-family: Calibri,Arial, Helvetica, sans-serif;
 }
 body {
     margin:0;
-    font-family: minecraft
+  
     
 }
 p {
   font-size: 20px;
   color: #AbAbAb
+  font-family: Calibri,Arial, Helvetica, sans-serif;
 
 }
 
@@ -69,6 +73,7 @@ p {
   overflow: hidden;
   background-color: #1e1e1e;
   padding: 20px 10px;
+  font-family: Calibri,Arial, Helvetica, sans-serif;
 }
 
 .header a {
@@ -80,12 +85,14 @@ p {
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
+  font-family: Calibri,Arial, Helvetica, sans-serif;
 }
 
 
 .header a:hover {
   background-color: #474747;
   color: rgb(255, 255, 255);
+  font-family: Calibri,Arial, Helvetica, sans-serif;
 }
 
 .header a.active {
@@ -102,6 +109,7 @@ p {
     float: none;
     display: block;
     text-align: left;
+    font-family: Calibri,Arial, Helvetica, sans-serif;
   }
   
   .header-right {
@@ -120,7 +128,7 @@ p {
   color: rgb(255, 255, 255);
   padding: 22px 16px;
   width: 100%;
-  font-family: minecraft;
+  font-family: Calibri,Arial, Helvetica, sans-serif;
   border: none;
   outline: none;
   text-align: left;
@@ -130,7 +138,7 @@ p {
   border-radius: 4px;
   height: 60px;
   padding: 10px;
-  font-family:minecraft;
+
 }
 
 
@@ -153,6 +161,7 @@ p {
   display: none;
   padding: 6px 12px;
   border-top: none;
+  font-family: Calibri,Arial, Helvetica, sans-serif;
 }
 
 
@@ -166,28 +175,38 @@ p {
     <img src="https://media.discordapp.net/attachments/806916548648370188/977726482690498570/logo.png" align ="left" width="50" height=auto>
     <a href="https://thecraftblox.github.io/index.html" class="logo">CraftSite</a>
   <div class="header-right">
+   <a class="active" href="index.html">Home</a>
+   <a   href="about.html">About</a>
+   <!--
     <a class="active" href="https://thecraftblox.github.io/index.html">Home</a>
     <a href="https://thecraftblox.github.io/Bases/index.html">Bases</a>
     <a href="https://thecraftblox.github.io/timeline.html">Timeline (WIP)</a> 
-
+  -->
 
   </div>
 </div>
 
 
-
-
-</style>
 </head>
 
 
 <div class="header">
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'The Average World')" id="defaultOpen">The Average World</button>
   <button class="tablinks" onclick="openCity(event, 'The Survival World')">The Survival World</button>
+  <button class="tablinks" onclick="openCity(event, 'The Average World')" id="defaultOpen">The Average World</button>
   <button class="tablinks" onclick="openCity(event, 'The Mediocre World')">The Mediocre World</button>
   <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
 </div></div> 
+
+<div id="The Survival World" class="tabcontent">
+  <h2>The Survival World</h2>
+  <hr>
+  <p>The Survival World was the og.</p> 
+  <a class = "button" href="https://thecraftblox.github.io/Worlds/Isometric/TSW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View</a>
+  <br><br>
+  <a class = "button" href="https://thecraftblox.github.io/Worlds/Top-Down/TSW/index.html" class="logo">See Top-Down View</a>
+</div>
+
 
 <div id="The Average World" class="tabcontent">
   <h2>The Average World</h2>
@@ -197,15 +216,6 @@ p {
  
   <br><br>
   <a class = "button" href="https://thecraftblox.github.io/Worlds/Top-Down/TAW/index.html" class="logo">See Top-Down View</a>
-</div>
-
-<div id="The Survival World" class="tabcontent">
-  <h2>The Survival World</h2>
-  <hr>
-  <p>The Survival World was the og.</p> 
-  <a class = "button" href="https://thecraftblox.github.io/Worlds/Isometric/TSW/index.html#/-736/64/-1595/-6/world/world-lighting" class="logo">See Isometric View</a>
-  <br><br>
-  <a class = "button" href="https://thecraftblox.github.io/Worlds/Top-Down/TSW/index.html" class="logo">See Top-Down View</a>
 </div>
 
 <div id="The Mediocre World" class="tabcontent">
@@ -227,10 +237,12 @@ p {
   <hr>
   <p style="font-size:20px">Other realms:</p>
   <br>
-  <p>The Lake of the Devils was a Week Long origins realm to be before TMW.</p> 
-  <a class = "button" href="https://example.com" class="logo">See Isometric View(TBD)</a>
-  <br><br>
-  <a class = "button" href="Worlds/Top-Down/LakeOfTheDevils/index.html" class="logo">See Top-Down View</a>
+  <div class =links>
+<a class = "button2" class="logo" style ="font-size:20px"><b>The Lake of the Devils (11/6/22-19/6/22)</b></a>
+<a class = "button" href="" class="logo">See Isometric View (TBD)</a>
+<a class = "button" href="Worlds/Top-Down/LakeOfTheDevils/index.html" class="logo">See Top-Down View</a>
+<p class="button2">The Lake of the Devils was a Week Long origins realm to be before The Mediocre World. </p> 
+</div>
 <br>
 <p>Origins 1 tbd</p> 
 <br>
